@@ -1,3 +1,5 @@
+# Парсинг контента с Googlenews с сохранением, найденных сайтов
+
 import urllib.request
 from bs4 import BeautifulSoup
 
@@ -17,4 +19,4 @@ class Scraper:
                     print("\n" + url)
                     f.write(url + "\n")
 
-Scraper('https://yandex.ru/news/').scrape()
+Scraper('https://news.google.ru/').scrape()
